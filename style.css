@@ -1,0 +1,352 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300;400;500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /*background: linear-gradient(to right, grey, rgb(192, 190, 190)); 
+    https://wallpaperaccess.com/full/7046.jpg
+    linear-gradient(to bottom, #EC1D24, #e02228, #fc454b);*/
+    background-color: gainsboro;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#header1 {
+    height: 40px;
+    background-color: black;
+}
+
+#header1 ul {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    align-items: center;
+    gap: 2rem;
+}
+
+#header1 h1 {
+    display: none;
+}
+
+#header1 img {
+    display: none;
+}
+
+/*background-color: #202020;*/
+#header2 {
+    position: sticky;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom, #202020, #1f1e1e);
+    color: white;
+    height: 60px;
+    width: 100%;
+    text-shadow: 0px 0px 1px black;
+    font-family: 'Roboto Condensed', Helvetica, sans-serif;
+}
+#header2 div {
+    position: relative;
+    display: flex;
+    text-align: center;
+    left: 100px;
+}
+
+#header2 img {
+    position: relative;
+    right: 175px;
+    opacity: 90%;
+}
+
+#header2 h1 {
+    font-size: 30px;
+}
+
+#header2 p {
+    margin-top: 5px;
+}
+
+#menu {
+    position: relative;
+    right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0px
+}
+
+#menu ul {
+    display: flex;
+    list-style: none;
+    gap: 4rem;
+}
+
+#menu a {
+    text-decoration: none;
+    font-family: 'Roboto Condensed', Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 17px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-shadow: 0px 0px 1px black;
+}
+
+#menu a:hover {
+    background-color: #464343;
+    border-radius: 8px;
+    color: gainsboro;
+    transition: 0.5s;
+}
+
+main {
+    margin: auto;
+    padding-bottom: 150px;
+    padding-top: 20px;
+    max-width: 1000px;
+    min-width: 320px;
+    background-color: white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.247);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hr_superior {
+    margin-top: 40px;
+}
+
+hr {
+    margin: auto;
+    width: 90%;
+}
+
+main h1 {
+    text-align: center;
+    font-family: 'Gemunu Libre', Helvetica, sans-serif;
+    font-size: 25px;
+    padding: 10px;
+}
+
+main .posters p {
+    font-family: 'Roboto Condensed', Helvetica, sans-serif;
+    font-weight: 900;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.linha {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.linha .posters {
+    display: flex;
+    justify-content: center;
+}
+
+.linha ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.linha img {
+    width: 240px;
+    height: 358px;
+    margin-top: 30px;
+    transition: 0.5s ease;
+}
+
+.linha img:hover {
+    width: 255px;
+    height: 373px;
+    transition: 0.5s ease;
+}
+
+main #credits {
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #202020ab;
+    width: 300px;
+    height: 100px;
+    border-radius: 30px;
+    border: 1px solid black
+}
+
+main #credits p {
+    font-family: 'Roboto Condensed', Helvetica, sans-serif;
+    text-shadow: 0px 0px 1px black;
+    font-weight: 900;
+    color: white;
+}
+
+#footer1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Condensed', Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom, #202020, #1f1e1e);
+    height: 60px;
+    color: white;
+    text-shadow: 0px 0px 1px black;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.377);
+}
+
+#footer2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*background-image: linear-gradient(to bottom, #202020, #1f1e1e);*/
+    background-color: black;
+    height: 320px;
+    color: white;
+}
+
+#footer2 p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    text-shadow: 0px 0px 1px black;
+    color: white;
+    opacity: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#footer2 div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 600px) { 
+    #header1 h1 {
+        display: block;
+        font-size: 30px;
+        font-family: 'Roboto Condensed', Helvetica, sans-serif;
+        color: white;
+        text-shadow: 0px 0px 1px black;
+    }
+
+    #header1 #box {
+        display: flex;
+    }
+    
+    #header1 img {
+        position: initial;
+        display: block;
+        width: 60px;
+        height: 30px;
+        margin-left: 6px;
+        margin-top: 3px;
+    }
+
+    #header1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+    }
+
+    #header2 {
+        justify-content: left;
+    }
+    
+    #header2 h1 {
+        display: none;
+        font-size: 0;
+    }
+
+    #header2 img {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+
+    #menu {
+        width: 490px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #menu a {
+        text-decoration: none;
+        font-family: 'Roboto Condensed', Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+        color: white;
+        padding: 0 9px;
+        text-shadow: 0px 0px 1px black;
+    }
+
+    #menu a:hover {
+        background: transparent;
+    }
+
+    #menu ul {
+        display: flex;
+        list-style: none;
+        gap: 1.5rem;
+    }
+
+    main .posters p {
+        width: 240px;
+        font-size: 20px;
+    }
+
+    .linha img {
+        width: 240px;
+        height: 358px;
+        margin-top: 30px;
+    }
+    
+    .linha img:hover {
+        width: 255px;
+        height: 373px;
+        transition: 0.5s;
+    }
+
+    .linha ul {
+        flex-direction: column;
+        gap: 0.5rem;
+
+    }
+
+    #header2 #menu {
+        flex-direction: column;
+    }
+
+    #footer1 {
+        height: 45px;
+        text-align: center;
+    }
+
+    #footer1 p {
+        font-size: 12px;
+        width: 200px;
+    }
+
+}
